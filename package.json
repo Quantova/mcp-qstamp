@@ -1,0 +1,41 @@
+{
+  "name": "@quantovainc/mcp-qstamp",
+  "version": "0.1.0",
+  "description": "Post quantum on chain audit for Model Context Protocol tool calls. Anchors a tamper evident Qstamp receipt for every tool invocation and keeps the call data private.",
+  "license": "Apache-2.0 OR MIT",
+  "author": "Quantova Inc <Quantovaorg@gmail.com>",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepare": "tsc -p tsconfig.json",
+    "pretest": "tsc -p tsconfig.json",
+    "test": "node --test"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "audit",
+    "provenance",
+    "post-quantum",
+    "qstamp",
+    "attestation",
+    "tamper-evident"
+  ],
+  "peerDependencies": {
+    "@quantovainc/qstamp": ">=0.6.0"
+  }
+}
